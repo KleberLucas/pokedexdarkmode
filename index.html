@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/pokemon.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pokedex</h1>
+        <input type="checkbox" id="mode">
+        <div class="selecao">
+            <label for="generation">Selecione a Geração:</label>
+            <select id="generation">
+                <option value="1">Geração 1 (1-151)</option>
+                <option value="2">Geração 2 (152-251)</option>
+                <option value="3">Geração 3 (252-386)</option>
+                <option value="4">Geração 4 (387-493)</option>
+                <option value="5">Geração 5 (494-649)</option>
+                <option value="X">Todos os Pokemon</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+            <button id="search-btn">Buscar</button>
+        </div>
+        <ul id="pokedex"></ul>
+    </div>
+    <script src="js/pokemon.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+
+</html>

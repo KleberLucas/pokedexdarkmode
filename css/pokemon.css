@@ -1,0 +1,242 @@
+:root {
+
+    --fire: #FDDFDF;
+    --grass: #DEFDE0;
+    --electric: #FCF7DE;
+    --water: #DEF3FD;
+    --ground: #f4e7da;
+    --rock: #d5d5d4;
+    --fairy: #fceaff;
+    --poison: #98d7a5;
+    --bug: #f8d5a3;
+    --dragon: #97b3e6;
+    --psychic: #eaeda1;
+    --flying: #F5F5F5;
+    --fighting: #E6E0D4;
+    --normal: #F5F5F5;
+
+}
+
+
+body {
+    /* background-color: orangered; */
+    background: rgb(94,15,15);
+    background: linear-gradient(90deg, rgba(94,15,15,1) 0%, rgba(172,23,20,1) 59%, rgba(166,84,84,1) 88%);
+    color: white;
+    margin: 0;
+    font-family: rubik;
+}
+
+body.dark{
+    background: none;
+    background-color: #374151;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.selecao{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.selecao label{
+    font-size: 20px;
+}
+
+.selecao select{
+    font-size: 18px;
+    padding: 10px;
+}
+
+#search-btn{
+    margin-left: 30px;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid white;
+    background-color: crimson;
+    color: white;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card.dark {
+    list-style: none;
+    padding: 40px;
+    background-color: #222;
+    color: #f4f4f4;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+
+.card:hover {
+    animation: bounce 0.5s linear;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.58);
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    margin-top: 15px;
+    color: #f8f8f8;
+    /* font-weight: lighter; */
+    background-color: #939595;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card-image {
+    height: 180px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.483);
+}
+
+.card-image.dark {
+    background-color: #374151;
+}
+
+/* .card.fire {
+    
+    background-color: var(--fire);
+}
+
+.card.grass {
+    
+    background-color: var(--grass);
+}
+.card.electric {
+    
+    background-color: var(--electric);
+}
+.card.water {
+    
+    background-color: var(--water);
+}
+.card.ground {
+    
+    background-color: var(--ground);
+}
+.card.rock {
+    
+    background-color: var(--rock);
+}
+.card.fairy {
+    
+    background-color: var(--fairy);
+}
+.card.poison {
+    
+    background-color: var(--poison);
+}
+.card.bug {
+    
+    background-color: var(--bug);
+}
+.card.dragon {
+    
+    background-color: var(--dragon);
+}
+.card.psychic {
+    
+    background-color: var(--psychic);
+}
+.card.flying {
+    
+    background-color: var(--flying);
+}
+.card.fighting {
+    
+    background-color: var(--fighting);
+}
+.card.normal {
+    
+    background-color: var(--normal);
+} */
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* DARK MODE */
+
+input[type="checkbox"]{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    /* background-color: yellow; */
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-size: cover;
+}
+
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #374151;
+    border-radius: 50px;
+}
+
+
+
+input[type="checkbox"]:checked:before{
+    transform: translate(100%);
+    background-color: white;
+}
+
+input[type="checkbox"]:checked{
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+}
